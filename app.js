@@ -26,7 +26,12 @@ function submitHandler(){
     var ip = Number(initialPrice.value);
     var qty = Number(stockQuantity.value);
     var curr = Number(currentPrice.value);
-    calculateProfitOrLoss(ip, qty , curr)
+    if(ip && qty && curr){
+        calculateProfitOrLoss(ip, qty , curr)
+    }else {
+      alert("Please enter all the fields")
+    }
+   
 }
 
 
