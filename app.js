@@ -14,7 +14,7 @@ function calculateProfitOrLoss(initial , quantity , current ){
     }else if(current > initial){
        const profit = (current - initial )*quantity
        const profitPercentage = (profit/initial)*100
-       outputElement.innerHTML = `Hey there is a profit of Rs . ${profit} and the profit percentage is ${lossPercentage} % in your stock purchase`
+       outputElement.innerHTML = `Hey there is a profit of Rs . ${profit} and the profit percentage is ${profitPercentage} % in your stock purchase`
     }else{
         outputElement.innerHTML =  "No pain no gain and no gain no pain"
     }
